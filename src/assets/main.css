@@ -1,6 +1,11 @@
 @import './base.css';
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+
+body{
+  background-image: linear-gradient( to right, #0E041D, #150323);
+}
+
 #app {
   font-family: Raleway, sans-serif;
   color: #fff;

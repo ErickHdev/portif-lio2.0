@@ -6,26 +6,24 @@ import { RouterView } from 'vue-router'
 <template>
   <!--navbar smartphone -->
   <NavBar />
-  <Apresentation />
+  <MyApresentation />
 
   <RouterView />
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import Apresentation from './components/Apresentation.vue'
+import MyApresentation from './components/MyApresentation.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Apresentation
+    MyApresentation
   }
 }
 </script>
 
 <style scoped>
-NavBar{
-  position: fixed;
-}
+
 </style>
