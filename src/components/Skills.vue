@@ -2,7 +2,8 @@
     <div class="containerSkills">
         <div class="contentSkills">
             <div class="titleSkills">
-                <h1>Skills</h1>
+                <span><img src="../assets/code-icon.svg">Skills</span>
+                <h1>Habilidades</h1>
             </div>
             <div class="skills">
 
@@ -74,7 +75,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
 }
 
 .titleSkills{
@@ -83,13 +84,37 @@ export default {
     justify-content: center;
 }
 
+.titleSkills h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #A110A3;
+    margin-bottom: 2rem;
+}
+
+.titleSkills span{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 800;
+    color: #A110A3;
+    opacity: 0.2;
+    z-index: -1;
+    margin-bottom: 6rem;
+}
+
+.titleSkills img{
+    width: 100px;
+    margin-right: 1rem;
+    transform: rotate(-30deg);
+    filter: invert(16%) sepia(76%) saturate(4792%) hue-rotate(291deg) brightness(78%) contrast(100%);
+}
+
 .contentSkills {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 65rem;
-    height: 48rem;
+    height: 50rem;
 }
 
 .skills{
@@ -102,18 +127,58 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1f0b35;
     padding: 1rem;
     border-radius: 15px;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     width: 14.2rem;
     height: 12rem;
+
+    position: relative;
+    overflow: hidden;
+
+    img, h4{
+        z-index: 1;
+    }
+
+    h4{
+        margin-top: 1rem;
+        font-family: montserrat;
+    }
+}
+
+.skill::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 150%;
+    background-color: #A110A3;
+    box-shadow: 0 0 20px 20px #A110A3;
+    animation: skillAnimation 8s linear infinite;
+
+
+}
+
+@keyframes skillAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.skill::after{
+    content: '';
+    position: absolute;
+    background-color: #1f0b35;
+    inset: 5px;
+    border-radius: inherit;
+
 }
 
 .skill:hover{
-    transform: scale(1.1)
+    transform: scale(1.02);
 }
 
 .skill img{
