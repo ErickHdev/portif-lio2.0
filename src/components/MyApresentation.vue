@@ -1,24 +1,22 @@
 <template>
     <div class="myApresentation">
         <div class="apresentationText">
-						<p>Hello 😆, I'm</p>
-
+			<p>Hello 😆, I'm</p>
             <h1>Erick Henrique</h1>
+			<p class="devFront">Desenvolvedor Frontend 🖥️</p>
+			
 
-						<p class="devFront">Desenvolvedor Frontend 🖥️</p>
-
-						<div class="btnsContact">
-							<a href="https://www.linkedin.com/in/erick-hdev" target="_blank">
-								<button class="buttonContact">Contate-me</button>
-							</a>
-							<a href="https://www.github.com/erickHdev" target="_blank">
-								<button class="buttonCV">CV</button>
-							</a>
-
-						</div>
+			<div class="containerBtns">
+				<a href="https://www.linkedin.com/in/erick-hdev" target="_blank">
+					<button class="buttonContact btnW">Contate-me</button>
+				</a>
+				<a href="https://www.github.com/erickHdev" target="_blank">
+					<button class="buttonCV btnW">CV</button>
+				</a>
+			</div>
         </div>
         <div class="bgImage">
-					<img src="@/assets/euDev.png" alt="Logo" />
+			<img src="@/assets/euDev.png" alt="Logo" />
         </div>
     </div>
 
@@ -34,170 +32,223 @@ export default {
 
 
 <style scoped>
-
-
 .myApresentation{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 100vh;
-		color: white;
-		margin-inline: 10%;
-		background-image: linear-gradient( to right, #0E041D, #150323);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 85vh;
+	color: white;
+	margin-inline: 18%;
+	padding-top: 10vh;
 }
 
-.apresentationText{
-		display: flex;
-		flex-direction: column;
-		height: 450px;
+.apresentationText {
+	display: flex;
+	flex-direction: column;
+	height: 15vw;
 
-		p {
-			font-size: 3rem;
-			margin-left: 3px;
-		}
-
-		h1{
-			font-size: 6rem;
-			line-height: 4rem;
-		}
-}
-
-.bgImage{
-		border-radius: 53% 83% 84% 19% / 79% 57% 77% 57%  ;
-		background-image: linear-gradient( to top right, #9610A3, #A110A3);
-		box-shadow: 0 0 60px 20px #A110A3;
-}
-
-.btnsContact{
-		display: flex;
-		justify-content: space-between;
-		width: 450px;
-		margin-top: 20px;
-		margin-left: 3px;
-		margin-bottom: 20px;
+	p {
+		font-size: 1.5vw;
 		margin: 0;
+		margin-left: 2px;
+	}
+
+	h1 {
+		font-size: 3vw;
+		line-height: 2.5vw;
+		font-weight: 800;
+	}
 }
 
-.buttonContact{
-		width: 200px;
-		height: 40px;
-		background-image: linear-gradient( to right, #8010A3, #A110A3);;
-		color: white;
-		border: none;
-		text-align: center;
-		text-decoration: none;
-		font-size: 1.2rem;
-		border-radius: 15px;
+.containerBtns {
+	display: flex;
+	justify-content: space-between;
+	width: 15vw;
+	margin-left: 4px;
 }
 
-.buttonCV{
-		width: 200px;
-		height: 40px;
-		background-color: transparent;
-		color: #A110A3;
-		border: 1px solid #A110A3;
-		text-align: center;
-		text-decoration: none;
-		font-size: 1.2rem;
-		border-radius: 15px;
-
+.btnW {
+	width: 6vw;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	font-size: 0.8vw;
 }
 
+.buttonContact {
+	background-image: linear-gradient( to right, #8010A3, #A110A3);
+	color: white;
+	border: none;
+}
+
+.buttonCV {
+	background-color: transparent;
+	color: #A110A3;
+	border: 1px solid #A110A3;
+}
+
+.bgImage {
+	border-radius: 53% 83% 84% 19% / 79% 57% 77% 57%;
+	background-image: linear-gradient( to top right, #9610A3, #A110A3);
+	box-shadow: 0 0 60px 20px #A110A3;
+
+	img {
+		width: 20vw;
+		height: 20vw;
+	}
+}
 
 @media (hover: hover) {
 
 }
 
-/* media query smartphone */
-
-@media (max-width: 1024px) {
-	.myApresentation{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		width: 100vw;
-		margin: 0;
+@media (max-width: 1600px) {
+	.myApresentation {
+		margin-inline: 18%;
 	}
 
 	.apresentationText{
+		p {	
+			font-size: 2.5vw;
+			margin-left: 2px;
+		}
+		h1 {
+			font-size: 4vw;
+			line-height: 3vw;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.myApresentation {
+		margin-inline: 15%;
+		height: 70vh;
+	}
+
+	.apresentationText{
+		p{	
+			font-size: 2.5vw;
+			margin-left: 2px;
+		}
+		h1 {
+			font-size: 4vw;
+			line-height: 3vw;
+		}
+	}
+
+	.containerBtns {
+		width: 22vw;
+	}
+	.btnW {
+		width: 9vw;
+		height: 30px;
 		text-align: center;
-		height: 15rem;
-		padding: 0;
+		font-size: 1.2vw;
+	}
+}
+
+/* media query low resolution */
+
+@media (max-width: 1024px) {
+	.myApresentation {
+		height: 60vh;
+	}
+
+	.apresentationText{
+		p{	
+			font-size: 2.5vw;
+			margin-left: 2px;
+		}
+		h1 {
+			font-size: 4.5vw;
+			line-height: 3vw;
+		}
+	}
+
+	.containerBtns {
+		width: 22vw;
+	}
+
+	.btnW {
+		width: 9vw;
+		height: 25px;
+		text-align: center;
+		font-size: 1.2vw;
+	}
+}
+
+/* media query smartphone */
+
+@media (max-width: 800px) {
+	.myApresentation {
+		height: 70vh;
+	}
+	
+}
 
 
+@media (max-width: 660px) {
+	.myApresentation {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100vh;
+		padding-block: 15vh;
+	}
+
+	.apresentationText {
 		p {
-			text-align: left;
-			font-size: 0.9rem;
-			margin: 0;
-			margin-left: 3px;
-			line-height: 2rem;
+			font-size: 5vw;
+			margin-left: 2px;
 		}
 
-		h1{
-			font-size: 2.8rem;
-			line-height: 2rem;
-			margin: 0;
-		}
-
-		.devFront{
-			font-size: 1.3rem;
-			margin: 0;
-			margin-left: 3px;
-			line-height: 3.3rem;
+		h1 {
+			font-size: 10+vw;
+			line-height: 4.5vh;
 		}
 	}
 
-	.bgImage{
-		width: 70vw;
-		height: 80vw;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 53% 83% 84% 19% / 79% 57% 77% 57%  ;
-		background-image: linear-gradient( to top right, #9610A3, #A110A3);
-		box-shadow: 0 0 60px 20px #A110A3;
-
-		img{
-			width: 70vw;
-			height: 70vw;
-		}
-	}
-
-	.btnsContact{
+	.containerBtns {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 95%;
-		margin-top: 20px;
-		margin-left: 3px;
-		margin: 0;
+		width: 60vw;
+		margin-top: 10px;
+		margin-left: 2px;
 	}
 
-	.buttonContact{
-		width: 130px;
-		height: 35px;
-		background-image: linear-gradient( to right, #8010A3, #A110A3);;
-		color: white;
-		border: none;
+
+	.btnW {
+		width: 28vw;
+		height: 30px;
 		text-align: center;
 		text-decoration: none;
-		font-size: 1rem;
 		border-radius: 15px;
-		margin-bottom: 10px;
-		margin: 0;
+		font-size: 2vh;
 	}
 
-	.buttonCV{
-		width: 130px;
-		height: 35px;
+	.buttonContact {
+		background-image: linear-gradient( to right, #8010A3, #A110A3);
+		color: white;
+		border: none;
+	}
+
+	.buttonCV {
 		background-color: transparent;
 		color: #A110A3;
 		border: 1px solid #A110A3;
-		text-align: center;
-		text-decoration: none;
-		font-size: 1rem;
-		border-radius: 15px;
+	}
+
+	.bgImage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+
+		img {
+			width: 70vw;
+			height: 70vw;
+		}
 	}
 }
 

@@ -7,6 +7,9 @@ import { RouterView } from 'vue-router'
   <!--navbar smartphone -->
   <NavBar />
   <MyApresentation />
+  <AboutMe />
+  <Skills />
+
 
   <RouterView />
 </template>
@@ -14,12 +17,16 @@ import { RouterView } from 'vue-router'
 <script>
 import NavBar from './components/NavBar.vue'
 import MyApresentation from './components/MyApresentation.vue'
+import AboutMe from './components/AboutMe.vue'
+import Skills from './components/Skills.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    MyApresentation
+    MyApresentation,
+    AboutMe,
+    Skills
   }
 }
 </script>

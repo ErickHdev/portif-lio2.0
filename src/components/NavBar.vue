@@ -45,29 +45,32 @@ export default {
   .helper{
     display: none;
   }
+
   header {
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
     height: 80px;
     background-image: linear-gradient( to right, #0E041D, #150323);
-    margin-inline: 10%;
+    padding-inline: 10%;
   }
 
   .meuLogo{
   display: flex;
   align-items: center;
-  h1{
-    margin: 0;
-    font-size: 2rem;
-    margin-right: 1rem;
-    font-weight: 800;
+    h1{
+      margin: 0;
+      font-size: 2rem;
+      margin-right: 1rem;
+      font-weight: 800;
 
-    span{
-      color: red;
+      span{
+        color: red;
+      }
     }
+
   }
 
   .pipe{
@@ -85,11 +88,10 @@ export default {
   }
 
   .routes ul li a{
-    margin: 0 40px;
+    margin: 0 2vw;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 300;
-  }
   }
 
 
@@ -115,10 +117,36 @@ export default {
 
 }
 
+@media (max-width: 1300px) {
+  header{
+    padding-inline: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .meuLogo{
+    h1{
+      font-size: 1.5rem;
+      margin-left: 0;
+    }
+  }
+
+  .routes ul li a{
+    margin: 0 2vw;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .socialLinks a img{
+    width: 20px;
+  }
+}
+
 /* media quero smartphone */
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .socialLinks{
     display: none;
   }
@@ -129,6 +157,7 @@ export default {
 
   .meuLogo{
     h1{
+      font-size: 1.5rem;
       margin-left: 0;
     }
 
