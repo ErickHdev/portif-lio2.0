@@ -55,6 +55,7 @@ export default {
     height: 80px;
     background-image: linear-gradient( to right, #0E041D, #150323);
     padding-inline: 10%;
+    z-index: 1000;
   }
 
   .meuLogo{
