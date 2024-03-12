@@ -11,6 +11,7 @@ import { RouterView } from 'vue-router'
   <Skills />
   <Projetos />
 
+  <Contact />
   <RouterView />
 </template>
 
@@ -20,6 +21,7 @@ import MyApresentation from './components/MyApresentation.vue'
 import AboutMe from './components/AboutMe.vue'
 import Skills from './components/Skills.vue'
 import Projetos from './components/Projetos.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     MyApresentation,
     AboutMe,
     Skills,
-    Projetos
+    Projetos,
+    Contact
   }
 }
 </script>
