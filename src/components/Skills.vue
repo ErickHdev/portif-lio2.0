@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="skill" id="css">
-                    <<img src="../assets/skillIcons/css.svg" alt="html5">
+                    <img src="../assets/skillIcons/css.svg" alt="html5">
                     <h4>CSS</h4>
                 </div>
 
