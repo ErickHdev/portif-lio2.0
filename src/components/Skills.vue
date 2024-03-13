@@ -8,12 +8,12 @@
             <div class="skills">
 
                 <div class="skill" id="HTML">
-                    <img src="../assets/SkillIcons/html5.svg" alt="html5">
+                    <!-- <img src="../assets/SkillIcons/html5.svg" alt="html5"> -->
                     <h4>HTML</h4>
                 </div>
 
                 <div class="skill" id="css">
-                    <img src="../assets/SkillIcons/css.svg" alt="html5">
+                    <!-- <img src="../assets/SkillIcons/css.svg" alt="html5"> -->
                     <h4>CSS</h4>
                 </div>
 
