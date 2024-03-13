@@ -8,52 +8,52 @@
             <div class="skills">
 
                 <div class="skill" id="HTML">
-                    <img src="../assets/skillIcons/html5.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/html5.svg" alt="html5"> -->
                     <h4>HTML</h4>
                 </div>
 
                 <div class="skill" id="css">
-                    <img src="../assets/skillIcons/css.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/css.svg" alt="html5"> -->
                     <h4>CSS</h4>
                 </div>
 
                 <div class="skill" id="js">
-                    <img src="../assets/skillIcons/JavaScript.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/JavaScript.svg" alt="html5"> -->
                     <h4>JavaScript</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/typescript.png" alt="html5">
+                    <!-- <img src="../assets/skillIcons/typescript.png" alt="html5"> -->
                     <h4>TypeScript</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/nextjs.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/nextjs.svg" alt="html5"> -->
                     <h4>Nextjs</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/react.svg" alt="html5">
+                    <!--  <img src="../assets/skillIcons/react.svg" alt="html5"> -->
                     <h4>ReactJs</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/vuejs.svg" alt="html5">
+                     <!-- <img src="../assets/skillIcons/vuejs.svg" alt="html5"> -->
                     <h4>VueJs</h4>
                 </div>
                 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/git.svg" alt="html5">
+                     <!-- <img src="../assets/skillIcons/git.svg" alt="html5"> -->
                     <h4>Git</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/bootstrap.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/bootstrap.svg" alt="html5"> -->
                     <h4>Bootstrap</h4>
                 </div>
 
                 <div class="skill" >
-                    <img src="../assets/skillIcons/sass.svg" alt="html5">
+                    <!-- <img src="../assets/skillIcons/sass.svg" alt="html5"> -->
                     <h4>SASS</h4>
                 </div>
             </div>
