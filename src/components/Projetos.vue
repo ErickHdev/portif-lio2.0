@@ -1,4 +1,4 @@
-<template>
+<template class="a">
     <div class="containerProjetos">
         <div class="contentProjetos">
             <h1>Projetos</h1>
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="ProjetoDesc">
-                        <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p>
+                        <!-- <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p> -->
                         <button>Visitar</button>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="ProjetoDesc">
-                        <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p>
+                        <!-- <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p> -->
                         <button>Visitar</button>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="ProjetoDesc">
-                        <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p>
+                        <!-- <p>Resgate é um projeto que visa ajudar pessoas que estão passando por momentos difíceis, seja por depressão, ansiedade, ou qualquer outro problema psicológico. O projeto foi feito com Next.js e Sass.</p> -->
                         <button>Visitar</button>
                     </div>
                 </div>
@@ -68,14 +68,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
 }
 
 .contentProjetos{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .projetos{
@@ -218,7 +218,9 @@ export default {
 /* media query smartphone */
 
 @media (max-width: 600px) {
-
+    .a {
+        display: none;
+    }
 }
 
 </style>

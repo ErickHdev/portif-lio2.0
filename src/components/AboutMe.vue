@@ -88,17 +88,42 @@ export default {
 @media (max-width: 600px) {
     .aboutMe {
       text-align: center;
-      p {
-          font-size: 1.3rem;
+      width: 20rem;
+      flex-direction: column-reverse; 
+    }
 
-      }
+    .aboutContent{
+        padding: 0;
+    }
 
-      h1 {
-          font-size: 2.8rem;
-          line-height: 4rem;
-          font-weight: 600;
-      }
+    .aboutMe p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .aboutMe h2 {
+        font-size: 1.75rem;
+        line-height: 4rem;
+        font-weight: 600;
+    }
+
+    .aboutImage{
+        width: 100%;
+
+        img {
+            width: 340px;
+        }
+    }
+
+  .aboutContent{
+        width: 100%;
   }
+
+  .containerAbout{
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 </style>

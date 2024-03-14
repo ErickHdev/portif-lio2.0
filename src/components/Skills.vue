@@ -8,52 +8,52 @@
             <div class="skills">
 
                 <div class="skill" id="HTML">
-                    <!-- <img src="../assets/skillIcons/html5.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/html5.svg" alt="html5">
                     <h4>HTML</h4>
                 </div>
 
                 <div class="skill" id="css">
-                    <!-- <img src="../assets/skillIcons/css.svg" alt="html5"> -->
+                    <img src="../assets/skillIcons/css.svg" alt="html5">
                     <h4>CSS</h4>
                 </div>
 
                 <div class="skill" id="js">
-                    <!-- <img src="../assets/skillIcons/JavaScript.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/JavaScript.svg" alt="html5">
                     <h4>JavaScript</h4>
                 </div>
 
                 <div class="skill" >
-                    <!-- <img src="../assets/skillIcons/typescript.png" alt="html5"> -->
+                    <img src="../assets/SkillIcons/typescript.png" alt="html5">
                     <h4>TypeScript</h4>
                 </div>
 
                 <div class="skill" >
-                    <!-- <img src="../assets/skillIcons/nextjs.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/nextjs.svg" alt="html5">
                     <h4>Nextjs</h4>
                 </div>
 
                 <div class="skill" >
-                    <!--  <img src="../assets/skillIcons/react.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/react.svg" alt="html5">
                     <h4>ReactJs</h4>
                 </div>
 
                 <div class="skill" >
-                     <!-- <img src="../assets/skillIcons/vuejs.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/vuejs.svg" alt="html5">
                     <h4>VueJs</h4>
                 </div>
                 
                 <div class="skill" >
-                     <!-- <img src="../assets/skillIcons/git.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/git.svg" alt="html5">
                     <h4>Git</h4>
                 </div>
 
                 <div class="skill" >
-                    <!-- <img src="../assets/skillIcons/bootstrap.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/bootstrap.svg" alt="html5">
                     <h4>Bootstrap</h4>
                 </div>
 
                 <div class="skill" >
-                    <!-- <img src="../assets/skillIcons/sass.svg" alt="html5"> -->
+                    <img src="../assets/SkillIcons/sass.svg" alt="html5">
                     <h4>SASS</h4>
                 </div>
             </div>
@@ -158,8 +158,6 @@ export default {
     background-color: #A110A3;
     box-shadow: 0 0 20px 20px #A110A3;
     animation: skillAnimation 8s linear infinite;
-
-
 }
 
 @keyframes skillAnimation {
@@ -201,7 +199,58 @@ export default {
 /* media query smartphone */
 
 @media (max-width: 600px) {
+    .containerSkills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150vh;
+    }
 
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill{ 
+        width: 8rem;
+        height: 8rem;
+
+        img{
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .skill::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 150%;
+        background-color: #A110A3;
+        box-shadow: 0 0 20px 20px #A110A3;
+        animation: skillAnimation 8s linear infinite;
+    }
+
+    .titleSkills h1{
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: #A110A3;
+        margin-bottom: 2rem;
+    }
+
+    .titleSkills span{
+        position: absolute;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #A110A3;
+        opacity: 0.2;
+        z-index: -1;
+        margin-bottom: 5rem;
+    }
+
+    .titleSkills img{
+        width: 80px;
+        margin-right: 1rem;
+    }
 }
 
 </style>

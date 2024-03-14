@@ -9,8 +9,9 @@ import { RouterView } from 'vue-router'
   <MyApresentation />
   <AboutMe />
   <Skills />
-  <Projetos />
 
+  <Projetos class= "Pdt"/>
+  <ProjetosMobile class="Pmo" />
   <Contact />
   <RouterView />
 </template>
@@ -22,6 +23,7 @@ import AboutMe from './components/AboutMe.vue'
 import Skills from './components/Skills.vue'
 import Projetos from './components/Projetos.vue'
 import Contact from './components/Contact.vue'
+import ProjetosMobile from './components/ProjetosMobile.vue'
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     AboutMe,
     Skills,
     Projetos,
+    ProjetosMobile,
     Contact
   }
 }
@@ -38,4 +41,24 @@ export default {
 
 <style scoped>
 
+@media (hover: hover) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 800px) {
+
+}
+/* media query smartphone */
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
 </style>
